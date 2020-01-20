@@ -6,7 +6,8 @@ html
     body
         script(type="text/javascript" src="js/materialize.min.js")
         div(class="container")
-            each row in results
+            h5 #{count} tweets in your timeline.
+            each row in timeline
                 div(class="tweet")
                     div(class="tweetinfo") #{row['name']} @#{row['account']} #{row['datetime']}
                     div(class="row")
